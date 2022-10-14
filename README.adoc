@@ -5,8 +5,8 @@
 
 == Examples
 
-- link:src/main/java/Jdk08.java[JDK  8 Examples]
-- link:src/main/java/Jdk09.java[JDK  9 Examples]
+- link:src/main/java/Jdk08.java[JDK &nbsp; 8 Examples]
+- link:src/main/java/Jdk09.java[JDK &nbsp; 9 Examples]
 - link:src/main/java/Jdk10.java[JDK 10 Examples]
 - link:src/main/java/Jdk11.java[JDK 11 Examples]
 - link:src/main/java/Jdk12.java[JDK 12 Examples]
