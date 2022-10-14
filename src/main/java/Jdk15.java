@@ -1,7 +1,7 @@
 public class Jdk15 {
     public static void main(String[] args) {
         //stringConcatenation();
-        noStringConcatenationWithTextBlocks();
+        noStringConcatenationWithTextBlock();
     }
 
     /**
@@ -11,7 +11,7 @@ public class Jdk15 {
      * As quebras são inseridas automaticamente quando pressionado ENTER no
      * bloco de texto.
      */
-    private static void noStringConcatenationWithTextBlocks() {
+    private static void noStringConcatenationWithTextBlock() {
         final String html =
                 """
                 <table>
