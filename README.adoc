@@ -1,4 +1,4 @@
-= JDK new features examples image:https://img.shields.io/github/workflow/status/manoelcampos/jdk-new-features/maven[GitHub Workflow Status]
+= JDK new features examples https://github.com/manoelcampos/jdk-new-features/actions/workflows/maven.yml[image:https://img.shields.io/github/workflow/status/manoelcampos/jdk-new-features/maven[GitHub Workflow Status]]
 
 - link:src/main/java/Jdk08.java[JDK  8 Examples]
 - link:src/main/java/Jdk09.java[JDK  9 Examples]
