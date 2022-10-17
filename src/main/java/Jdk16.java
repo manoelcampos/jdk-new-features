@@ -13,20 +13,16 @@
  * @param city
  * @param state
  */
-record Person(String name, String city, String state){
+record Country(String name, String continent){
 }
 
 public class Jdk16 {
     public static void main(String[] args) {
-        createRecord();
-    }
-
-    private static void createRecord() {
-        var person = new Person("Manoel", "Palmas", "TO");
+        var country = new Country("Portugal", "Europe");
         //Prints using the default toString() method.
-        System.out.println(person);
+        System.out.println(country);
 
         //Prints by calling each getter method provided automatically.
-        System.out.printf("My name is %s and I live in %s-%s%n", person.name(), person.city(), person.state());
+        System.out.printf("%s is in %s%n", country.name(), country.continent());
     }
 }
