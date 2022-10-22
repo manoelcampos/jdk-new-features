@@ -2,6 +2,7 @@ public class Jdk15 {
     public static void main(String[] args) {
         //stringConcatenation();
         noStringConcatenationWithTextBlock();
+        formattedTextBlock();
     }
 
     /**
@@ -26,25 +27,28 @@ public class Jdk15 {
     }
 
     /**
-     * Show how you can create more formatted
-     * Strings
+     * Show how you can create formatted
+     * Strings that are easier to ready,
+     * providing a more clean code.
      */
     private static void formattedTextBlock() {
-        final String city = "Palmas";
-        final String state = "Tocantins";
-        final String region = "North";
-        final String capital = "Yes";
+        final String city = "Palmas", state = "Tocantins";
         final double areaKm2 =  2.219;
 
-        final String cityData =
+        final String cityStr =
                 """
                 City: %s
                 State: %s
-                Region: %s
-                Capital: %s
                 Area: %.2f KM²
-                """.formatted(city, state, region, capital);
-        System.out.println(cityData);
+                """.formatted(city, state, areaKm2);
+        System.out.println(cityStr);
+
+        /*
+        //The same code using the traditional String.format method.
+        //The code is less readable and the dev needs to manually include line breaks.
+        final String cityStr2 = String.format("City: %s\nState: %s\nArea: %.2f KM²", city, state, areaKm2);
+        System.out.println(cityStr2);
+        */
     }
 
     private static void stringConcatenation() {
