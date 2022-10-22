@@ -5,11 +5,11 @@ public class Jdk15 {
     }
 
     /**
-     * Mostra como usar o recurso de Text Block.
-     * Perceba que não temos que nos preocupar em concatenar Strings,
-     * nem manualmente inserir uma quebra de linha (\n) onde queremos.
-     * As quebras são inseridas automaticamente quando pressionado ENTER no
-     * bloco de texto.
+     * Shows how to use a Text Block.
+     * See that we don't have to worry about String concatenation,
+     * neither manually insert line breaks (\n).
+     * Line breaks are inserted automatically when you press ENTER inside
+     * the Text Block.
      */
     private static void noStringConcatenationWithTextBlock() {
         final String html =
