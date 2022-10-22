@@ -1,3 +1,5 @@
+package samples.jdk15;
+
 public class Jdk15 {
     public static void main(String[] args) {
         //stringConcatenation();

@@ -1,3 +1,5 @@
+package samples.jdk16;
+
 /**
  * This is what a regular data class (which just stores data)
  * looks like in traditional Java code.
@@ -28,6 +30,6 @@ public final class Country {
 
     @Override
     public String toString() {
-        return "Country[name= %s, continent=%s]".formatted(name, continent);
+        return "samples.jdk16.Country[name= %s, continent=%s]".formatted(name, continent);
     }
 }

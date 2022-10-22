@@ -1,3 +1,5 @@
+package samples.jdk14;
+
 import java.time.DayOfWeek;
 
 public class Jdk14 {

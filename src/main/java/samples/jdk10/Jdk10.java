@@ -1,3 +1,5 @@
+package samples.jdk10;
+
 import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
