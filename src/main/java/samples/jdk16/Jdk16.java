@@ -7,11 +7,11 @@ public class Jdk16 {
     }
 
     /**
-     * Show how to use the basic {@link CountryRecord}
+     * Show how to use the basic {@link Country}
      * which provides just one constructor.
      */
     private static void createCountryRecord() {
-        var country = new CountryRecord("Portugal", "Europe");
+        var country = new Country("Portugal", "Europe");
         //Prints using the default toString() method.
         System.out.println(country);
 
@@ -20,15 +20,15 @@ public class Jdk16 {
     }
 
     /**
-     * Show how to use the more complex {@link PointRecord}
+     * Show how to use the more complex {@link Point}
      * which provides multiple constructors.
      */
     private static void createPointRecord() {
         System.out.println();
-        System.out.println(new PointRecord());
-        final var p1 = new PointRecord(10);
-        final var p2 = new PointRecord(20, 30);
-        final var p3 = new PointRecord(20, 40);
+        System.out.println(new Point());
+        final var p1 = new Point(10);
+        final var p2 = new Point(20, 30);
+        final var p3 = new Point(20, 40);
         System.out.println(p1);
         System.out.println(p2);
         System.out.printf("p1 to p2 distance: %.2f%n", p1.distance(p2));

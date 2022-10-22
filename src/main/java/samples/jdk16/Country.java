@@ -1,35 +1,27 @@
 package samples.jdk16;
 
 /**
- * This is what a regular data class (which just stores data)
- * looks like in traditional Java code.
- * We have attributes, getters and possibly a {@link #toString()} method.
- * If we don't want to change object attribute values,
- * we don't include setters.
+ * Creates a record, which is like a data class (used just to store data),
+ * automatically including getters with the same name of the attributes,
+ * a {@link #toString()} and {@link #hashCode()} method.
  *
- * <p>After JDK 16, such a class can be replaced by a Record,
- * such as {@link CountryRecord}, which removes all boilerplate code,
- * providing the same features.</p>
+ * <p>
+ * The parameters in the record declaration
+ * are automatically declared as:
+ * <ul>
+ *     <li>the record attributes;</li>
+ *     <li>parameters for a default constructor.</li>
+ * </ul>
+ * </p>
+ *
+ * <p>
+ * You can check the {@link CountryClass} class
+ * that provides the same features as this extremelly
+ * simple record, but with a lot of boilerplate code.
+ * </p>
+ *
+ * @param name
+ * @param continent
  */
-public final class Country {
-    private final String name;
-    private final String continent;
-
-    public Country(String name, String continent) {
-        this.name = name;
-        this.continent = continent;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getContinent() {
-        return continent;
-    }
-
-    @Override
-    public String toString() {
-        return "Country[name= %s, continent=%s]".formatted(name, continent);
-    }
+record Country(String name, String continent) {
 }

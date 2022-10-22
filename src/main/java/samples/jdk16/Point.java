@@ -8,11 +8,11 @@ package samples.jdk16;
  * @param x
  * @param y
  */
-public record PointRecord(double x, double y) {
+public record Point(double x, double y) {
     /**
      * Creates a point with default coordinates 0.
      */
-    public PointRecord(){
+    public Point(){
         this(0, 0);
     }
 
@@ -20,7 +20,7 @@ public record PointRecord(double x, double y) {
      * Creates a point with a specific value for x and 0 for y.
      * @param x
      */
-    public PointRecord(double x){
+    public Point(double x){
         this(x, 0);
     }
 
@@ -34,7 +34,7 @@ public record PointRecord(double x, double y) {
      * @param x
      * @param y
      */
-    public PointRecord(double x, double y) {
+    public Point(double x, double y) {
         this.x = x;
         this.y = y;
         System.out.printf("# Creating point %.2f, %.2f%n", x, y);
@@ -45,7 +45,7 @@ public record PointRecord(double x, double y) {
      * @param other
      * @return
      */
-    public double distance(PointRecord other){
+    public double distance(Point other){
         return square(other.x - x) + square(other.y - y);
     }
 
