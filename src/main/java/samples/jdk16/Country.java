@@ -30,6 +30,6 @@ public final class Country {
 
     @Override
     public String toString() {
-        return "samples.jdk16.Country[name= %s, continent=%s]".formatted(name, continent);
+        return "Country[name= %s, continent=%s]".formatted(name, continent);
     }
 }
