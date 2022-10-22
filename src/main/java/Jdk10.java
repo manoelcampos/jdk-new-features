@@ -9,10 +9,10 @@ public class Jdk10 {
     }
 
     /**
-     * Mostra com usar a nova palavra reservada "var"
-     * para declarar variáveis locais, onde o compilador
-     * descobre automaticamente o tipo de uma variável
-     * de acordo com o valor atribuído a ela.
+     * Shows how to use the new "var" keyword
+     * to declare local variables, where the compiler
+     * automatically infers (finds out) the variable type,
+     * according to the value assigned to it.
      *
      * @see <a href="https://openjdk.org/jeps/286">JEP 286</a>
      * @see <a href="https://openjdk.org/projects/amber/guides/lvti-style-guide ">Style Guide</a>
