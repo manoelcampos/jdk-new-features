@@ -15,7 +15,7 @@ https://gitpod.io/#https://github.com/manoelcampos/jdk-new-features[image:https:
 - link:src/main/java/samples/jdk13/Jdk13.java[JDK 13 Examples]
 - link:src/main/java/samples/jdk14/Jdk14.java[JDK 14 Examples]
 - link:src/main/java/samples/jdk15/Jdk15.java[JDK 15 Examples]
-- link:src/main/java/samples/jdk16/Jdk16.java[JDK 16 Examples]
+- link:src/main/java/samples/jdk16/[JDK 16 Examples]
 - link:src/main/java/samples/jdk17/Jdk17.java[JDK 17 Examples]
 - link:src/main/java/samples/jdk18/Jdk18.java[JDK 18 Examples]
 - link:src/main/java/samples/jdk19/Jdk19.java[JDK 19 Examples]

@@ -1,6 +1,6 @@
 package samples.jdk16;
 
-public class Jdk16 {
+public class AppRecordSample {
     public static void main(String[] args) {
         createCountryRecord();
         createPointRecord();
