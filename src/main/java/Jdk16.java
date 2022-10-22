@@ -1,17 +1,19 @@
 /**
- * Cria um record (registro), que é uma classe apenas para armazenamento de dados,
- * contendo automaticamente métodos getters com o mesmo nome dos atributos,
- * além de {@link #toString()} e {@link #hashCode()}.
- * Os parâmetros passados na declaração do record são declarados
- * automaticamente:
+ * Creates a record, which is like a class for data storage only,
+ * automatically including getters with the same name of the attributes,
+ * a {@link #toString()} and {@link #hashCode()} method.
+ *
+ * <p>
+ * The parameters in the record declaration
+ * are automatically declared as:
  * <ul>
- *     <li>como atributos dele;</li>
- *     <li>e em um construtor com todos estes parâmetros (não existindo construtor padrão sem parâmetros).</li>
+ *     <li>the record attributes;</li>
+ *     <li>parameters for a default constructor.</li>
  * </ul>
+ * </p>
  *
  * @param name
- * @param city
- * @param state
+ * @param continent
  */
 record Country(String name, String continent){
 }
