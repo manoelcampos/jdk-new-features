@@ -29,7 +29,7 @@ public class Jdk17 {
         final var legalPerson = new LegalPerson();
         legalPerson
                 .setWebsite("https://mycompany.com")
-                .setFoundationDate(LocalDate.of(2000, 10, 19))
+                .setFoundationDate(LocalDate.of(1950, 3, 19))
                 .setName("My Company")
                 .setAddress("5th Avenue");
         System.out.println(legalPerson);
