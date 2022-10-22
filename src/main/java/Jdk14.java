@@ -9,12 +9,12 @@ public class Jdk14 {
     }
 
     /**
-     * Exemplo de uso do novo recurso de Switch Expression onde cada instrução case tem apenas uma linha de código.
-     * Permite atribuir o resultado de uma Switch Expression para uma variável,
-     * no lugar de repetir a atribuição de um valor à variável em cada um dos case's.
-     * Diferente do Switch convencional, tal variável pode ser final,
-     * trazendo garantias de que variáveis não serão alteradas indevidamente
-     * em locais posteriores do código.
+     * Shows utilization example of the new Switch Expression feature,
+     * where each case instruction has only one line of code.
+     * Switch Expressions enable the switch to yield ("return") a value
+     * which can be assigned to a variable.
+     * Different from the tradditional switch, such a variable can be
+     * final because we have just a single variable assignement.
      */
     private static void switchExpressionSingleLine() {
         final int month = (int)(Math.random()*12 + 1);
@@ -28,8 +28,9 @@ public class Jdk14 {
     }
 
     /**
-     * Exemplo de uso de Switch Expression exaustiva com Enum:
-     * verifica se todos os valores possíves para a Enum foram incluídos.
+     * Show how Switch Expression can be exahustive when using
+     * together with enums. Checks if all possible values for an enum
+     * were covered by the switch.
      */
     private static void switchExpressionExaustiveWithEnum() {
         final var weekDay = DayOfWeek.of((int)(Math.random()*7 + 1));
@@ -42,7 +43,8 @@ public class Jdk14 {
     }
 
     /**
-     * Exemplo de uso do novo recurso de Switch Expression onde instruções case podem ter múltiplas linhas.
+     * Shows how to use a Switch Expression with multiple intructions for
+     * some cases.
      */
     private static void switchExpressionMultiLine() {
         final int month = (int)(Math.random()*12 + 1);
@@ -60,11 +62,12 @@ public class Jdk14 {
 
     /**
     private static void switchExpressionNonExaustive() {
+        //This code DOES NOT COMPILE, since using Switch Expression,
+        //the compiler che ks if all options were covered by the case instructions.
+        //In this example, months with 31 days weren't included in the switch,
+        //neither a default clause.
+        //This way, the days variable wouldn't have a value for months 1, 3, 5, 7, 8, 10 and 12.
         // Código deste método NÃO COMPILA, pois com Switch Expression, o compilador verifica
-        // se todas as possibilidades foram cobertas nos comandos case.
-        // Neste examplo, os meses com 31 dias não foram incluídos no switch
-        // nem uma cláusula default para retornar 31 como valor padrão foi incluída.
-        // Assim, variável days não teria um valor caso o mês fosse de 31 dias.
         final int month = (int)(Math.random()*12 + 1);
         final int days = switch (month) {
             case 2 -> 28;
