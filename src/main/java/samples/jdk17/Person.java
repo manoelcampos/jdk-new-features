@@ -19,15 +19,22 @@ public sealed abstract class Person permits NaturalPerson, LegalPerson {
         return name;
     }
 
-    public void setName(String name) {
+    public Person setName(String name) {
         this.name = Objects.requireNonNull(name);
+        return this;
     }
 
     public String getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public Person setAddress(String address) {
         this.address = Objects.requireNonNull(address);
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        return "Name: %s Address: %s".formatted(name, address);
     }
 }

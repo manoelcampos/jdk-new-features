@@ -14,16 +14,24 @@ public final class NaturalPerson extends Person {
         return birthDate;
     }
 
-    public void setBirthDate(LocalDate birthDate) {
+    public NaturalPerson setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
+        return this;
     }
 
     public char getGender() {
         return gender;
     }
 
-    public void setGender(char gender) {
+    public NaturalPerson setGender(char gender) {
         this.gender = gender;
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        final String personData = super.toString();
+        return "%s Birth date: %s Gender: %c".formatted(personData, birthDate, gender);
     }
 }
 

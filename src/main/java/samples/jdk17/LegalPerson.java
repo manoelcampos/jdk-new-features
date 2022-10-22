@@ -14,15 +14,23 @@ public final class LegalPerson extends Person {
         return foundationDate;
     }
 
-    public void setFoundationDate(LocalDate foundationDate) {
+    public LegalPerson setFoundationDate(LocalDate foundationDate) {
         this.foundationDate = foundationDate;
+        return this;
     }
 
     public String getWebsite() {
         return website;
     }
 
-    public void setWebsite(String website) {
+    public LegalPerson setWebsite(String website) {
         this.website = website;
+        return this;
+    }
+
+    @Override
+    public String toString() {
+        final String personData = super.toString();
+        return "%s Foundation date: %s Website: %s".formatted(personData, foundationDate, website);
     }
 }
