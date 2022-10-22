@@ -17,11 +17,11 @@ public record Point(double x, double y) {
     }
 
     /**
-     * Creates a point with a specific value for x and 0 for y.
+     * Creates a point with the same value for x and y.
      * @param x
      */
     public Point(double x){
-        this(x, 0);
+        this(x, x);
     }
 
     /**
@@ -39,6 +39,8 @@ public record Point(double x, double y) {
         this.y = y;
         System.out.printf("# Creating point %.2f, %.2f%n", x, y);
     }
+
+    public boolean isOrigin(){ return x == 0 && y == 0; }
 
     /**
      * Computes the distance between this point and other point.
