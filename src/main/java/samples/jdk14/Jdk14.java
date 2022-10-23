@@ -8,6 +8,18 @@ public class Jdk14 {
         switchExpressionSingleLine();
         switchExpressionExaustiveWithEnum();
         //switchExpressionMultiLine()
+
+        helpfulNullPointerException();
+    }
+
+    private static void helpfulNullPointerException() {
+        ClassA a = null;
+        ClassX x = null;
+        try {
+            a.b = x.y;
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     /**
