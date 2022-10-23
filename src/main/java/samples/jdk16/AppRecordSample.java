@@ -31,11 +31,11 @@ public class AppRecordSample {
         final var p3 = new Point(20, 40);
         System.out.println(p1);
         System.out.println(p2);
-        System.out.printf("p1 to p2 distance: %.2f%n", p1.distance(p2));
-        System.out.printf("p2 to p3 distance: %.2f%n", p2.distance(p3));
+        System.out.printf("p1 to p2 distance: %d%n", p1.distance(p2));
+        System.out.printf("p2 to p3 distance: %d%n", p2.distance(p3));
 
-        final double coordinatesSum = p3.x() + p3.y();
-        System.out.printf("p3: x + y = %.2f%n", coordinatesSum);
+        final int coordinatesSum = p3.x() + p3.y();
+        System.out.printf("p3: x + y = %d%n", coordinatesSum);
 
         //DOES NOT COMPILE: record attributes are private
         //p1.x = 3;

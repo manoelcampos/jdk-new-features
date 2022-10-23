@@ -8,7 +8,7 @@ package samples.jdk16;
  * @param x
  * @param y
  */
-public record Point(double x, double y) {
+public record Point(int x, int y) {
     /**
      * Creates a point with default coordinates 0.
      */
@@ -20,7 +20,7 @@ public record Point(double x, double y) {
      * Creates a point with the same value for x and y.
      * @param x
      */
-    public Point(double x){
+    public Point(int x){
         this(x, x);
     }
 
@@ -34,10 +34,10 @@ public record Point(double x, double y) {
      * @param x
      * @param y
      */
-    public Point(double x, double y) {
+    public Point(int x, int y) {
         this.x = x;
         this.y = y;
-        System.out.printf("# Creating point %.2f, %.2f%n", x, y);
+        System.out.printf("# Creating point %d, %d%n", x, y);
     }
 
     public boolean isOrigin(){ return x == 0 && y == 0; }
@@ -47,9 +47,9 @@ public record Point(double x, double y) {
      * @param other
      * @return
      */
-    public double distance(Point other){
+    public int distance(Point other){
         return square(other.x - x) + square(other.y - y);
     }
 
-    private static double square(final double val){ return val * val; }
+    private static int square(final int val){ return val * val; }
 }
