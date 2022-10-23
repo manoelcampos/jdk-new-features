@@ -38,6 +38,6 @@ public class Jdk19 {
             return;
         }
 
-        System.out.println("Unknow object: " + obj.getClass().getSimpleName());
+        System.out.println("Unknown object: " + obj.getClass().getSimpleName());
     }
 }
