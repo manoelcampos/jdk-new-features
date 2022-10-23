@@ -1,4 +1,4 @@
-package samples.shared;
+package samples.jdk16;
 
 /**
  * This is what a regular data class (which just stores data)
