@@ -1,7 +1,5 @@
 package samples.shared;
 
-import samples.jdk16.Country;
-
 /**
  * This is what a regular data class (which just stores data)
  * looks like in traditional Java code.
@@ -10,7 +8,7 @@ import samples.jdk16.Country;
  * we don't include setters.
  *
  * <p>After JDK 16, such a class can be replaced by a Record,
- * such as {@link Country}, which removes all boilerplate code,
+ * such as {@link samples.jdk16.Country}, which removes all boilerplate code,
  * providing the same features.</p>
  */
 public final class CountryClass {
@@ -30,6 +28,11 @@ public final class CountryClass {
         return continent;
     }
 
+    /**
+     * Uses the {@link String#formatted(Object...)} method
+     * introduced in JDK 15.
+     * @return
+     */
     @Override
     public String toString() {
         return "Country[name= %s, continent=%s]".formatted(name, continent);
