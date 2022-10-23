@@ -1,5 +1,7 @@
 package samples.jdk16;
 
+import samples.shared.CountryClass;
+
 /**
  * Creates a record, which is like a data class (used just to store data),
  * automatically including getters with the same name of the attributes,

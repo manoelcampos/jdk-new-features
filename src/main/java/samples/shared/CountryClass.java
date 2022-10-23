@@ -1,4 +1,6 @@
-package samples.jdk16;
+package samples.shared;
+
+import samples.jdk16.Country;
 
 /**
  * This is what a regular data class (which just stores data)
