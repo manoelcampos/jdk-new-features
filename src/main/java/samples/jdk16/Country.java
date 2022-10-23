@@ -23,5 +23,5 @@ package samples.jdk16;
  * @param name
  * @param continent
  */
-record Country(String name, String continent) {
+public record Country(String name, String continent) {
 }
