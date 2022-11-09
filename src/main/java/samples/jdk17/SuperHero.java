@@ -1,11 +1,11 @@
 package samples.jdk17;
 
 /**
- * A super hero is not a kind of person our project
+ * A superhero is not a kind of person our project
  * allows to be created. We can only have {@link NaturalPerson} and {@link LegalPerson},
  * as permited by {@link Person} class.
  *
- * <p>If you remove the // below, you'll see the class does not compile.</p>
+ * <p>If you remove just the // below, you'll see the class does not compile.</p>
  */
 public final class SuperHero // extends Person
 {

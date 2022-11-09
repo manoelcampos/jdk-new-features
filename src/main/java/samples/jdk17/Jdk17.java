@@ -13,7 +13,7 @@ public class Jdk17 {
      *
      * <p>
      * The chainned calls to setter methods are not a JDK feature,
-     * just a OOP practice to make it easier to call
+     * just an OOP practice to make it easier to call
      * methods in sequence.
      * </p>
      */
