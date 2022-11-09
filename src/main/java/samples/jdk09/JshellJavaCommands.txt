@@ -1,0 +1,22 @@
+/*
+A bunch of arbitrary Java commands to run in jshell without creating
+a Java class.
+Use the run-java-commands-with-jshell.sh script for that or type the
+following command at a terminal:
+
+    jshell JshellJavaCommands.txt
+
+It's used .txt extension instead of .java because
+since that file mises a class definition, it won't compile
+in the regular IDEs, making the entire project build to fail.
+*/
+
+System.out.println()
+System.out.println("Running arbritary and standalone Java commands using JShell")
+System.out.println("No need to create a class or even use ;")
+final var list = List.of(1, 2, 3, 4)
+System.out.println("No need for importing classes/members from JDK libs")
+System.out.println("This is a list created without importing anything: " + list)
+
+// Exits jshell console
+/exit
