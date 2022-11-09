@@ -35,6 +35,7 @@ public class Jdk18 {
      *
      * @param person
      * @return
+     * @see <a href="https://openjdk.org/jeps/420">JEP 420</a>
      */
     private LocalDate getPersonDateUsingSwitchPatternMatching(final Person person) {
         return switch(person) {
