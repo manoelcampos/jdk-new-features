@@ -10,6 +10,7 @@ import java.util.Objects;
  *
  * @see NaturalPerson
  * @see LegalPerson
+ * @see <a href="https://openjdk.org/jeps/409>JEP 409</a>
  */
 public sealed abstract class Person permits NaturalPerson, LegalPerson {
     private String name;

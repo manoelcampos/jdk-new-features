@@ -8,7 +8,7 @@ public class Jdk17 {
     }
 
     /**
-     * Creates the {@link NaturalPerson} and {@link LegalPerson}
+     * Shows the creation of {@link NaturalPerson} and {@link LegalPerson}
      * which extend the selead class {@link Person}.
      *
      * <p>
@@ -16,6 +16,7 @@ public class Jdk17 {
      * just an OOP practice to make it easier to call
      * methods in sequence.
      * </p>
+     * @see <a href="https://openjdk.org/jeps/409>JEP 409</a>
      */
     private static void createPeople() {
         final var naturalPerson = new NaturalPerson();
