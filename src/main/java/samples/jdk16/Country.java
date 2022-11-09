@@ -22,6 +22,7 @@ package samples.jdk16;
  *
  * @param name
  * @param continent
+ * @see <a href="https://openjdk.org/jeps/395">JEP 395</a>
  */
 public record Country(String name, String continent) {
 }

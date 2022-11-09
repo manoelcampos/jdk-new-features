@@ -16,14 +16,25 @@ public class Jdk18 {
 
     private Jdk18() {
         createPeople();
-        System.out.println("Gets the date field from natural person: " + getPersonDateUsingSwitchPatternMatching(naturalPerson));
-        System.out.println("Gets the date field from legal person: " + getPersonDateUsingSwitchPatternMatching(legalPerson));
+        patternMatchingForSwitches();
 
         /*
         //The called method uses if instead of the Switch Pattern Matching feature.
         System.out.println("Gets the date field from natural person: " + getPersonDateUsingIf(naturalPerson));
         System.out.println("Gets the date field from legal person: " + getPersonDateUsingIf(legalPerson));
         */
+    }
+
+    /**
+     * Shows how the Pattern Matching for Switches feature is used by
+     * the {@link #getPersonDateUsingSwitchPatternMatching(Person)} method.
+     */
+    private void patternMatchingForSwitches() {
+        var msg1 = "Natural person date: " + getPersonDateUsingSwitchPatternMatching(naturalPerson);
+        System.out.println(msg1);
+
+        var msg2 = "Legal person date: " + getPersonDateUsingSwitchPatternMatching(legalPerson);
+        System.out.println(msg2);
     }
 
     /**

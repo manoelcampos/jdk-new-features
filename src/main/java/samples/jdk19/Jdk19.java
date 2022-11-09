@@ -6,20 +6,26 @@ import samples.jdk16.Rectangle;
 public class Jdk19 {
     public static void main(String[] args) {
         final var p1 = new Point(10, 20);
-        printObjectInfo(p1);
+        printObjInfoUsingRecordPattern(p1);
 
         System.out.println();
         final var p2 = new Point(80, 100);
-        printObjectInfo(new Rectangle(p1, p2));
+        printObjInfoUsingRecordPattern(new Rectangle(p1, p2));
     }
 
     /**
      * Shows how to use the Record Pattern Matching,
      * which is a kind of destructuring pattern
      * we find in JavaScript and other languages.
-     * @param obj
+     * Objects given as parameter don't need to belong to a hierarchy.
+     *
+     * <p>It's used when we need to access specific members for different
+     * classes of object.</p>
+     *
+     * @param obj object to print data
+     * @see <a href="https://openjdk.org/jeps/405">JEP 405</a>
      */
-    private static void printObjectInfo(Object obj) {
+    private static void printObjInfoUsingRecordPattern(final Object obj) {
         /* After the instanceof we are extracting the attributes x and y
         *  out of the obj if it is a Point instance.
         *  This way, we can use x and y instead of p.x() and p.y().

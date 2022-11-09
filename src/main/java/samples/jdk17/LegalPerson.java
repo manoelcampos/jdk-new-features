@@ -4,7 +4,10 @@ import java.time.LocalDate;
 
 /**
  * A legal person that represents a business or organization.
+ * It's a final class extending the selead class {@link Person}.
  * In Portuguese, it's called "Pessoa Jurídica".
+ *
+ * @see <a href="https://openjdk.org/jeps/409>JEP 409</a>
  */
 public final class LegalPerson extends Person {
     private LocalDate foundationDate;

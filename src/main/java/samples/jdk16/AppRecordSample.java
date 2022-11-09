@@ -1,5 +1,9 @@
 package samples.jdk16;
 
+/**
+ * Shows how to use Records.
+ * @see <a href="https://openjdk.org/jeps/395">JEP 395</a>
+ */
 public class AppRecordSample {
     public static void main(String[] args) {
         createCountryRecord();

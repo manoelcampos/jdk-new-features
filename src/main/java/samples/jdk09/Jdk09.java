@@ -42,6 +42,11 @@ public class Jdk09 {
         System.out.println(charSet);
     }
 
+    /**
+     * Shows how to use the convenience methods of
+     * from collections such as {@link List}, {@link Set} and {@link Map}.
+     * @see <a href="https://openjdk.org/jeps/269>JEP 269</a>
+     */
     private static void collectionFactories() {
         List<Integer> numberList = List.of(1, 2, 3, 4);
         System.out.println(numberList);

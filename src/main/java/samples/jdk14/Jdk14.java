@@ -12,6 +12,11 @@ public class Jdk14 {
         helpfulNullPointerException();
     }
 
+    /**
+     * Shows how the NullPointerException message was improved
+     * to make it clear totally where the exception ocurred.
+     * @see <a href="https://openjdk.org/jeps/358">JEP 358</a>
+     */
     private static void helpfulNullPointerException() {
         ClassA a = null;
         ClassX x = null;
@@ -29,6 +34,8 @@ public class Jdk14 {
      * which can be assigned to a variable.
      * Different from the tradditional switch, such a variable can be
      * final because we have just a single variable assignement.
+     *
+     * @see <a href="https://openjdk.org/jeps/361">JEP 361</a>
      */
     private static void switchExpressionSingleLine() {
         final int month = (int)(Math.random()*12 + 1);
@@ -45,6 +52,8 @@ public class Jdk14 {
      * Show how Switch Expression can be exahustive when using
      * together with enums. Checks if all possible values for an enum
      * were covered by the switch.
+     *
+     * @see <a href="https://openjdk.org/jeps/361">JEP 361</a>
      */
     private static void switchExpressionExaustiveWithEnum() {
         final var weekDay = DayOfWeek.of((int)(Math.random()*7 + 1));
@@ -59,6 +68,8 @@ public class Jdk14 {
     /**
      * Shows how to use a Switch Expression with multiple intructions for
      * some cases.
+     *
+     * @see <a href="https://openjdk.org/jeps/361">JEP 361</a>
      */
     private static void switchExpressionMultiLine() {
         final int month = (int)(Math.random()*12 + 1);

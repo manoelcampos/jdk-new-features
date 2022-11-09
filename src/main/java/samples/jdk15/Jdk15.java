@@ -13,6 +13,8 @@ public class Jdk15 {
      * neither manually insert line breaks (\n).
      * Line breaks are inserted automatically when you press ENTER inside
      * the Text Block.
+     *
+     * @see <a href="https://openjdk.org/jeps/378">JEP 378</a>
      */
     private static void noStringConcatenationWithTextBlock() {
         final String html =

@@ -4,7 +4,10 @@ import java.time.LocalDate;
 
 /**
  * A natural person that represents an individual, a human being.
+ * It's a final class extending the selead class {@link Person}.
  * In Portuguese, it's called "Pessoa Física".
+ *
+ * @see <a href="https://openjdk.org/jeps/409>JEP 409</a>
  */
 public final class NaturalPerson extends Person {
     private LocalDate birthDate;

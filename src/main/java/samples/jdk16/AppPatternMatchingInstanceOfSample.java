@@ -1,6 +1,11 @@
 package samples.jdk16;
 
-public class AppPatternMatchingSample {
+/**
+ * Shows how to use Pattern Matching for instanceof.
+ * @see <a href="https://openjdk.org/jeps/394">JEP 394</a>
+ *
+ */
+public class AppPatternMatchingInstanceOfSample {
     public static void main(String[] args) {
         final var p0 = new Point();
         printObjectUsingInstanceOfPatternMatching(p0);
