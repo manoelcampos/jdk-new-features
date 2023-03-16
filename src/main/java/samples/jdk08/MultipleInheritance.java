@@ -73,6 +73,12 @@ interface Uppercaser extends StringEncoder {
  * Overriding the method, you can decide which implementation to use.
  * In this example, I decided to use both.
  * </p>
+ *
+ * <p><b>NOTICE:</b> THIS IS JUST AN EXAMPLE ON HOW TO USE MULTIPLE
+ * INHERITANCE WITH DEFAULT METHODS ON JDK 8+.
+ * KEEP IN MIND THE SOLUTION PROVIDED HERE IS JUST FOR DEMONSTRATION
+ * PURPOSES. USING FUNCTIONAL PROGRAMMING AND FUNCTION COMPOSITION
+ * TO IMPLEMENT THE FEATURES IN THIS CLASS WILL BE MUCH EASIER.</p>
  */
 class UpperLeet implements Uppercaser, LeetCode {
     @Override
