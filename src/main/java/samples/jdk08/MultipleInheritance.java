@@ -61,10 +61,11 @@ interface Uppercaser extends StringEncoder {
 }
 
 /**
- * Converts String into uppercase then to Leet code
- * using the classes {@link Uppercaser} and {@link LeetCode}.
- * Since those classes have a default implementation for the convert method,
- * this UpperLeet class could not use both of them.
+ * Converts a String into uppercase then to Leet code,
+ * using the interfaces {@link Uppercaser} and {@link LeetCode}.
+ * Since those interfaces have a default implementation for the convert method,
+ * this UpperLeet class could not use both of them,
+ * causing the <a href="https://en.wikipedia.org/wiki/Multiple_inheritance#The_diamond_problem">Diamond of Death issue</a>.
  * If you just remove the convert method below
  * you'll see the method doesn't compile.
  *
