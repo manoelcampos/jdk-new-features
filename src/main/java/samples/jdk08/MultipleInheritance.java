@@ -83,6 +83,14 @@ interface Uppercaser extends StringEncoder {
 class UpperLeet implements Uppercaser, LeetCode {
     @Override
     public String convert(final String text) {
+        /* Realize that despite the convert method is not static,
+        we are calling it directly from the classes instead of using "this" to indicate
+        we want to call it from an instance.
+
+        However, the class name is just being used to indicate
+        which implementation of the method we want to use.
+        It isn't a static method call in this context.
+        */
         final String upperCase = Uppercaser.super.convert(text);
         return LeetCode.super.convert(upperCase);
     }
