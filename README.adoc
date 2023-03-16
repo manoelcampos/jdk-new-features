@@ -1,4 +1,4 @@
-= JDK new features examples https://github.com/manoelcampos/jdk-new-features/actions/workflows/maven.yml[image:https://img.shields.io/github/workflow/status/manoelcampos/jdk-new-features/maven[GitHub Workflow Status]]
+= JDK new features examples https://github.com/manoelcampos/jdk-new-features/actions/workflows/maven.yml[image:https://img.shields.io/github/actions/workflow/status/manoelcampos/jdk-new-features/maven.yml?branch=master[GitHub Workflow Status]]
 
 https://gitpod.io/#https://github.com/manoelcampos/jdk-new-features[image:https://gitpod.io/button/open-in-gitpod.svg[]]
 
