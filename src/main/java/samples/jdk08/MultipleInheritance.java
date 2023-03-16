@@ -82,8 +82,9 @@ interface Uppercaser extends StringEncoder {
  */
 class UpperLeet implements Uppercaser, LeetCode {
     @Override
-    public String convert(String text) {
-        return LeetCode.super.convert(Uppercaser.super.convert(text));
+    public String convert(final String text) {
+        final String upperCase = Uppercaser.super.convert(text);
+        return LeetCode.super.convert(upperCase);
     }
 }
 
