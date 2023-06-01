@@ -7,7 +7,7 @@ https://gitpod.io/#https://github.com/manoelcampos/jdk-new-features[image:https:
 
 == Examples
 
-- link:src/main/java/samples/jdk08/Jdk08.java[JDK &nbsp; 8 Examples]
+- link:src/main/java/samples/jdk08/[JDK &nbsp; 8 Examples]. For functional programming examples, https://github.com/manoelcampos/programacao-funcional-java[check this repo] (only in Portuguese).
 - link:src/main/java/samples/jdk09/Jdk09.java[JDK &nbsp; 9 Examples]
 - link:src/main/java/samples/jdk10/Jdk10.java[JDK 10 Examples]
 - link:src/main/java/samples/jdk11/Jdk11.java[JDK 11 Examples]
