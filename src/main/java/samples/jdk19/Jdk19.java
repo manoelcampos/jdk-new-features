@@ -20,7 +20,7 @@ public class Jdk19 {
      * Objects given as parameter don't need to belong to a hierarchy.
      *
      * <p>It's used when we need to access specific members for different
-     * classes of object.</p>
+     * classes of object that don't have a common superclass/interface.</p>
      *
      * @param obj object to print data
      * @see <a href="https://openjdk.org/jeps/405">JEP 405</a>
