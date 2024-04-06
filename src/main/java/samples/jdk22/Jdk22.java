@@ -58,8 +58,7 @@ public class Jdk22 extends SampleClass {
      */
     private static void jsonStringTemplate() {
         // See the static import (just for shortcut)
-        Processor<JSONObject, RuntimeException> JSON =
-                st -> new JSONObject(st.interpolate());
+        Processor<JSONObject, RuntimeException> JSON = st -> new JSONObject(st.interpolate());
 
         String name    = "Joan Smith";
         String phone   = "555-123-4567";
