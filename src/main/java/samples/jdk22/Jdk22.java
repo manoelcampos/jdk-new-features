@@ -27,7 +27,7 @@ public class Jdk22 extends SampleClass {
      * Instance main method. A simplified version of the main method that can be used in a class,
      * which doesn't require to be static and don't need a String array if you aren't going
      * to take command line parameters.
-     * Started as preview in JDK 11. Second preview in JDK 22.
+     * Started as preview in JDK 21. Second preview in JDK 22.
      * @see <a href="https://openjdk.org/jeps/445"></a>
      * @see <a href="https://openjdk.org/jeps/463"></a>
      */
