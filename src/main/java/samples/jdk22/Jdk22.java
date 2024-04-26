@@ -27,6 +27,8 @@ public class Jdk22 extends SampleClass {
      * Instance main method. A simplified version of the main method that can be used in a class,
      * which doesn't require to be static and don't need a String array if you aren't going
      * to take command line parameters.
+     * Started as preview in JDK 11. Second preview in JDK 22.
+     * @see <a href="https://openjdk.org/jeps/445"></a>
      * @see <a href="https://openjdk.org/jeps/463"></a>
      */
     void main() {
@@ -39,10 +41,11 @@ public class Jdk22 extends SampleClass {
      */
     public Jdk22(){
         // Calling any statements before a super or this construtor was not allowed before.
+        String jdkVersion = "JDK 22";
         unamedVar();
         stringTemplate();
         jsonStringTemplate();
-        super("JDK 22");
+        super(jdkVersion);
     }
 
     /**

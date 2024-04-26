@@ -1,3 +1,4 @@
+
 /**
  * A sample class that doesn't belong to any package,
  * that uses {@link Jdk22SuperClass}, and enables you to compile
