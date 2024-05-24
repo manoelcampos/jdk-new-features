@@ -21,7 +21,7 @@ https://gitpod.io/#https://github.com/manoelcampos/jdk-new-features[image:https:
 - link:src/main/java/samples/jdk19/Jdk19.java[JDK 19 Examples]
 - link:src/main/java/samples/jdk22/Jdk22.java[JDK 22 Examples]
 
-== Oracle Java Language Changes
+== Java Language Changes Documentation at Oracle
 
 Since JDK 13, the oficial Java language documentation site has improved a lot,
 providing specific articles for each new feature.
