@@ -20,3 +20,10 @@ https://gitpod.io/#https://github.com/manoelcampos/jdk-new-features[image:https:
 - link:src/main/java/samples/jdk18/Jdk18.java[JDK 18 Examples]
 - link:src/main/java/samples/jdk19/Jdk19.java[JDK 19 Examples]
 - link:src/main/java/samples/jdk22/Jdk22.java[JDK 22 Examples]
+
+== Oracle Java Language Changes
+
+Since JDK 13, the oficial Java language documentation site has improved a lot,
+providing specific articles for each new feature.
+You can check the documentation at https://docs.oracle.com/en/java/javase/13/language/index.html,
+where you can replace 13 by the JDK version you wish.
